@@ -26,6 +26,8 @@ function App() {
     };
   }, []);
 
+  const shouldAutoplay = windowWidth > 768; // Autoplay on screens wider than 768px
+
   return (
     <Router>
       <div className="App">
@@ -39,7 +41,7 @@ function App() {
       <div className="video-container">
       <video 
     src={video} 
-    autoPlay 
+    autoPlay={shouldAutoplay} 
     muted 
     loop 
     playsInline 
