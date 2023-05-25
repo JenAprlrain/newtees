@@ -217,6 +217,43 @@ body {
   font-size: 60px;
 }
 
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.footer-links a:hover {
+  color: red;
+}
+
+.social-media {
+  display: flex;
+}
+
+.social-media a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.social-media a:hover {
+  color: red;
+}
+
+
 /* Media query for larger screens */
 @media (min-width: 769px) {
   .hamburger {
