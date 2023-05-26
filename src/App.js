@@ -10,8 +10,9 @@ import partners from './images/partners.png';
 import moon from './images/moon.gif';
 import hat from './images/hat1.png';
 import punk from './images/punk2.png';
-import tech from './images/tech.gif';
+import tech from './images/techbanner.gif';
 import mytees from './images/MyTees.png'
+import About from './images/About.png'
 
 function App() {
 
@@ -65,8 +66,11 @@ function App() {
 <br></br>
 <br></br>
 <div className="image-container">
-<img src={mytees} alt="tech" />
-<img src={tech} alt="tech"  />
+<img src={mytees} alt="mytees" />
+<img src={About} alt="about"  />
+</div>
+<div className="image-techcontainer">
+<img src={tech} alt="tech" />
 </div>
 <h2 className="image-title">Current OfficialNFTees Collections</h2>
 <div className="image-row">
