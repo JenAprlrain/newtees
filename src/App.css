@@ -3,6 +3,11 @@
   src: local('Aller Bold Italic'), url(./fonts/Aller_BdIt.ttf) format('truetype');
 }
 
+.AppPage {
+  display: flex;
+  justify-content: center;
+}
+
 body {
   font-family: 'Aller Bold Italic', sans-serif;
 }
@@ -106,6 +111,16 @@ body {
   margin-bottom: 200px;  
 }
 
+.video-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: auto;
+  width: 100%;
+  margin-top: 100px; 
+  margin-bottom: 200px;  
+}
+
 .video-container video {
   border-radius: 10px; /* Add a border radius to the video element */
 }
@@ -168,6 +183,13 @@ body {
   margin-top: 20px;
 }
 
+.image-row2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
 .image-container {
   display: flex;
   justify-content: center;
@@ -210,6 +232,16 @@ body {
   border-radius: 10px; /* Apply border radius */
   cursor: pointer;
 }
+
+.image-container a img {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  margin: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 
 .image-techcontainer img {
   flex: 1;
@@ -267,6 +299,133 @@ body {
   color: red;
 }
 
+.top-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  overflow: auto;
+}
+
+.center-top {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.wallet-card {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 2px;
+  font-family: "Aller Bold Italic";
+}
+
+.connect-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 1rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: white;
+  color: black;
+  font-size: 1rem;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  font-family: "Aller Bold Italic";
+  cursor: pointer;
+}
+
+.connect-button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.nft-cards {
+  color: white;
+}
+
+.nft-card {
+  position: relative;
+  display: block;
+  width: 25%;
+  height: 250px;
+  background-color: rgba(255, 255, 255, 0.76);
+  color: black;
+  font-size: 17px;
+  font-family: "Aller Bold Italic";
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 12px;
+}
+
+.nft-card h4 {
+  text-align: center;
+  position: absolute;
+  padding-bottom: 7px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.nft-card img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+}
+.connected-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  font-family: "Aller Bold Italic";
+}
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  margin: 1rem 0;
+  font-family: "Aller Bold Italic";
+}
+.left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 200px;
+}
+.top-right-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.close-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.WhatIsInfo {
+  color: black;
+  text-align: center;
+  margin-top: 100px;
+  padding: 0 100px; /* Adjust the value to control the space on the left and right sides */
+  font-size: 23px;
+}
 
 /* Media query for larger screens */
 @media (min-width: 769px) {

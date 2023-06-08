@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import './App.css';
@@ -32,8 +32,19 @@ function App() {
 
   const shouldAutoplay = windowWidth > 768; // Autoplay on screens wider than 768px
 
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const handleLinkClick = () => {
+    window.scrollTo(0, 0);
+    navigate('/other-page');
+  };
+
   return (
-    <Router>
+    <div>
       <div className="App">
       <div class="background-container"></div>
         <Navbar />
@@ -66,8 +77,12 @@ function App() {
 <br></br>
 <br></br>
 <div className="image-container">
+<Link to="/mytees" style={{ display: 'block' }} onClick={handleLinkClick}>
 <img src={mytees} alt="mytees" />
-<img src={About} alt="about"  />
+</Link>
+<Link to="/about/what-is-tees" style={{ display: 'block' }} onClick={handleLinkClick}>
+<img src={About} alt="about" />
+</Link>
 </div>
 <div className="image-techcontainer">
 <img src={tech} alt="tech" />
@@ -88,7 +103,7 @@ function App() {
   </div>
 </div>
 <Footer />
-</Router>
+</div>
   
   );
 }
