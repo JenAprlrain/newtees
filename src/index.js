@@ -6,6 +6,9 @@ import App from './App';
 import MyTeesApp from './pages/mytees';
 import WhatIsTees from './pages/what-is-tees';
 import Team from './pages/team';
+import Technology from './pages/technology';
+import Chains from './pages/chains';
+import Partners from './pages/partners';
 
 ReactDOM.render(
   <Router>
@@ -14,6 +17,9 @@ ReactDOM.render(
       <Route path="/mytees" element={<MyTeesApp />} />
       <Route path="/about/what-is-tees" element={<WhatIsTees />} />
       <Route path="/team" element={<Team />} />
+      <Route path="/about/technology" element={<Technology />} />
+      <Route path="/about/chains" element={<Chains />} />
+      <Route path="/partners" element={<Partners />} />
     </Routes>
   </Router>,
   document.getElementById('root')

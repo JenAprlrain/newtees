@@ -90,6 +90,11 @@ body {
   display: block;
 }
 
+.dropbtn:hover {
+  color: red;
+  cursor: pointer;
+}
+
 .dropdown-content a {
   color: white;
   text-decoration: none;

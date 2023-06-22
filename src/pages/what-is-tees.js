@@ -27,6 +27,7 @@ return (
       <div class="background-container"></div>
         <Navbar />
       </div>
+      <h2 className="image-title">What is TEES?</h2>
       <div>
       <h2 className="WhatIsInfo">Tees is a web 3 digital fashion brand that seeks to offer secure, premium threads to our technology and fashion-focused community, elevating collectability. We offer engagement through our drop-style events that feature both partners and TEES-branded apparel, all of which is meticulously designed and printed with the highest quality materials available.</h2>
       </div>

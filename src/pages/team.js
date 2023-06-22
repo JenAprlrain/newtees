@@ -3,7 +3,6 @@ import Navbar from '../Navbar';
 import Footer from '../Footer';
 import Jen from '../images/Jen.png';
 import James from '../images/James.png';
-import Jerrod from '../images/Jerrod.png';
 import Zan from '../images/Zan.png';
 function team() {
 

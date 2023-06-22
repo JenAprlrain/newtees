@@ -32,7 +32,7 @@ const Navbar = () => {
   <Link to="/">Home</Link>
 </li>
 <li className="dropdown">
-  <Link to="/about" className="dropbtn">About</Link>
+<span className="dropbtn">About</span>
   <div className="dropdown-content">
     <Link to="/about/what-is-tees">What is Tees</Link>
     <Link to="/about/technology">Technology</Link>
@@ -43,7 +43,7 @@ const Navbar = () => {
   <Link to="/team">Team</Link>
 </li>
 <li className="dropdown">
-  <Link to="/partners" className="dropbtn">Partners</Link>
+<Link to="/partners">Partners</Link>
   <div className="dropdown-content">
     <Link to="/partners/uman">Uman</Link>
     <Link to="/partners/teens-on-acid">Teens on Acid</Link>
@@ -54,7 +54,7 @@ const Navbar = () => {
   </div>
 </li>
 <li className="dropdown">
-  <Link to="/collections" className="dropbtn">Collections</Link>
+<span className="dropbtn">Collections</span>
   <div className="dropdown-content">
     <Link to="/collections/royaltees">RoyalTees Collection</Link>
     <Link to="/collections/communitees">CommuniTees Collection</Link>
@@ -62,7 +62,7 @@ const Navbar = () => {
   </div>
 </li>
 <li className="dropdown">
-  <Link to="/exclusive-drops" className="dropbtn">Exclusive Drops</Link>
+<span className="dropbtn">Exclusive Drops</span>
   <div className="dropdown-content">
     <Link to="/exclusive-drops/uman-jacket">Uman Jacket</Link>
     <Link to="/exclusive-drops/hedera-holiday-sweater">Hedera Holiday Sweater</Link>
