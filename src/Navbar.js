@@ -46,11 +46,11 @@ const Navbar = () => {
 <Link to="/partners">Partners</Link>
   <div className="dropdown-content">
     <Link to="/partners/uman">Uman</Link>
-    <Link to="/partners/teens-on-acid">Teens on Acid</Link>
-    <Link to="/partners/clokkworky">Clokkworky</Link>
-    <Link to="/partners/potlucklabs">Potluck Labs</Link>
-    <Link to="/partners/tombheads">Tombheads AH</Link>
-    <Link to="/partners/fantompunks">Fantom Punks</Link>
+    <Link to="/partners/toa">Teens on Acid</Link>
+    <Link to="/partners/clokk">Clokkworky</Link>
+    <Link to="/partners/potluck">Potluck Labs</Link>
+    <Link to="/partners/tomb">Tombheads AH</Link>
+    <Link to="/partners/punks">Fantom Punks</Link>
   </div>
 </li>
 <li className="dropdown">
@@ -62,10 +62,11 @@ const Navbar = () => {
   </div>
 </li>
 <li className="dropdown">
-<span className="dropbtn">Exclusive Drops</span>
+<Link to="/drops">Exclusive Drops</Link>
   <div className="dropdown-content">
-    <Link to="/exclusive-drops/uman-jacket">Uman Jacket</Link>
-    <Link to="/exclusive-drops/hedera-holiday-sweater">Hedera Holiday Sweater</Link>
+    <Link to="/drops/jacket">Uman Jacket</Link>
+    <Link to="/drops/sweater">Hedera Holiday Sweater</Link>
+    <Link to="/drops/yachtclub">Hedera Yacht Club</Link>
     </div>
   </li>
   <li>

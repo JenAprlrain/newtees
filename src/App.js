@@ -40,7 +40,6 @@ function App() {
 
   const handleLinkClick = () => {
     window.scrollTo(0, 0);
-    navigate('/other-page');
   };
 
   return (
@@ -65,8 +64,12 @@ function App() {
   />
   </div>
   <div className="image-container">
+  <Link to="/drops" style={{ display: 'block' }} onClick={handleLinkClick}>
   <img src={drops} alt="Exclusive Drops" />
+  </Link>
+  <Link to="/partners" style={{ display: 'block' }} onClick={handleLinkClick}>
   <img src={partners} alt="Partners" />
+  </Link>
 </div>
 <br></br>
 <br></br>
@@ -85,21 +88,29 @@ function App() {
 </Link>
 </div>
 <div className="image-techcontainer">
+<Link to="/needle&chain" style={{ display: 'block' }} onClick={handleLinkClick}>
 <img src={tech} alt="tech" />
+</Link>
 </div>
 <h2 className="image-title">Current OfficialNFTees Collections</h2>
 <div className="image-row">
   <div className="image-item">
     <h3 className="images-title">RoyalTees</h3>
+    <Link to="/collections/royaltees" style={{ display: 'block' }} onClick={handleLinkClick}>
     <img src={moon} alt="royaltees" className="image" />
+    </Link>
   </div>
   <div className="image-item">
     <h3 className="images-title">CommuniTees</h3>
+    <Link to="/collections/communitees" style={{ display: 'block' }} onClick={handleLinkClick}>
     <img src={punk} alt="communitees" className="image" />
+    </Link>
   </div>
   <div className="image-item">
     <h3 className="images-title">Lifestyle</h3>
+    <Link to="/collections/lifestyle" style={{ display: 'block' }} onClick={handleLinkClick}>
     <img src={hat} alt="lifestyle" className="image" />
+    </Link>
   </div>
 </div>
 <Footer />

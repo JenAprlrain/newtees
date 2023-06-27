@@ -4,7 +4,10 @@ import Footer from '../Footer';
 import { Link } from 'react-router-dom';
 import uman from '../images/uman2.png'
 import toa from '../images/TOA1.png'
-import clok from '../images/clokk2.png'
+import clok from '../images/clokkworky.png'
+import potluck from '../images/potluck2.png'
+import tomb from '../images/tomb.png'
+import punks from '../images/punks.png'
 function Partners() {
 
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -33,35 +36,41 @@ return (
       <div className="image-row2">
       <div className="image-item">
       <h3 className="images-title">Uman</h3>
-      <Link to="/partners/uman"></Link>
+      <Link to="/partners/uman">
       <img src={uman} alt="uman" className="image" />
+      </Link>
       </div>
       <div className="image-item">
       <h3 className="images-title">Teens on Acid</h3>
-      <Link to="/partners/teens-on-acid"></Link>
+      <Link to="/partners/toa">
       <img src={toa} alt="teens on acid" className="image" />
+      </Link>
       </div>
       <div className="image-item">
       <h3 className="images-title">Clokkworky</h3>
-      <Link to="/partners/clokkworky"></Link>
+      <Link to="/partners/clokk">
       <img src={clok} alt="teens on acid" className="image" />
+      </Link>
       </div>
       </div>
       <div className="image-row2">
       <div className="image-item">
       <h3 className="images-title">Potluck Labs</h3>
-      <Link to="/partners/potlucklabs"></Link>
-      <img src={clok} alt="teens on acid" className="image" />
+      <Link to="/partners/potluck">
+      <img src={potluck} alt="potlucklabs" className="image" />
+      </Link>
       </div>
       <div className="image-item">
       <h3 className="images-title">Tombheads AH</h3>
-    <Link to="/partners/tombheads"></Link>
-    <img src={clok} alt="teens on acid" className="image" />
+    <Link to="/partners/tomb">
+    <img src={tomb} alt="tombheads" className="image" />
+    </Link>
     </div>
     <div className="image-item">
       <h3 className="images-title">Fantom Punks</h3>
-    <Link to="/partners/fantompunks"></Link>
-    <img src={clok} alt="teens on acid" className="image" />
+    <Link to="/partners/punks">
+    <img src={punks} alt="fantom punks" className="image" />
+    </Link>
     </div>
     </div>
     <div>
