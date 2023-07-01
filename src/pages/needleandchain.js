@@ -22,7 +22,7 @@ function Needle() {
     const shouldAutoplay = windowWidth > 768; // Autoplay on screens wider than 768px
 
     const handleButtonClick = () => {
-        window.open('', '_blank');
+        window.open('https://forms.gle/NoxU4x4C68SkT59K6', '_blank');
       };
 
 return (
@@ -33,7 +33,7 @@ return (
       </div>
       <h2 className="image-title">Needle & Chain</h2>
       <div>
-      <h2 className="WhatIsInfo">Needle & Chain is a service that we provide to buisnesses that would like a full service Phygital experience. We provide packages that meet all your needs to bring physical premium quality merch into the blockchain. </h2>
+      <h2 className="WhatIsInfo">Needle & Chain provides NFTees as a service for a procured collection of partners to provide their communities a full service phygital experience. We provide packages that meet all your needs and secure premium quality merch to the blockchain. </h2>
       </div>
       <div>
       <h2 className="WhatIsInfo">Click the button below to fill out our form to inquire pricing on a Needle & Chain package </h2>
