@@ -73,7 +73,7 @@ const Navbar = () => {
   <Link to="/needle&chain">Needle & Chain</Link>
 </li>
 <li>
-  <Link to="/mytees">My Tees</Link>
+  <Link to="/mytees2">My Tees</Link>
 </li>
     </ul>
   );
