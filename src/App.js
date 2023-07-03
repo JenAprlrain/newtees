@@ -80,7 +80,7 @@ function App() {
 <br></br>
 <br></br>
 <div className="image-container">
-<Link to="/mytees" style={{ display: 'block' }} onClick={handleLinkClick}>
+<Link to="/mytees2" style={{ display: 'block' }} onClick={handleLinkClick}>
 <img src={mytees} alt="mytees" />
 </Link>
 <Link to="/about/what-is-tees" style={{ display: 'block' }} onClick={handleLinkClick}>
