@@ -15,19 +15,29 @@ const Mytees2 = () => {
   const [nftCollections, setNftCollections] = useState([]);
   const [loading, setLoading] = useState(false);
 
+
   const connectWallet = async () => {
-    if (window.ethereum) {
-      try {
-        // Request access to the user's MetaMask wallet
-        await window.ethereum.request({ method: 'eth_requestAccounts' });
-        setConnected(true);
-      } catch (error) {
-        console.error('Failed to connect wallet:', error);
-      }
-    } else {
-      console.error('MetaMask extension not detected');
+  if (typeof window.ethereum !== 'undefined') {
+    let provider = window.ethereum;
+    // edge case if MM and CBW are both installed
+    if (window.ethereum.providers?.length) {
+      window.ethereum.providers.forEach(async (p) => {
+        if (p.isMetaMask) provider = p;
+      });
     }
-  };
+    try {
+      await provider.request({
+        method: 'eth_requestAccounts',
+        params: [],
+      });
+      setConnected(true);
+    } catch (error) {
+      console.error('Failed to connect wallet:', error);
+    }
+  } else {
+    console.error('MetaMask extension not detected');
+  }
+};  
 
   const fetchNftCollections = async () => {
     const web3 = new Web3(window.ethereum);
@@ -159,9 +169,6 @@ const Mytees2 = () => {
       <div className="wardrobe-items">
         <div className="wardrobe-item">
           <img src={fwardrobe} alt="Fantom Wardrobe" className="connect-wallet-button" onClick={connectWallet} />
-        </div>
-        <div className="wardrobe-item">
-          <img src={hwardrobe} alt="Hedera Wardrobe" className="connect-wallet-button" />
         </div>
       </div>
     </>

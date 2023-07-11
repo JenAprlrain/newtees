@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
+import WardrobePage from './pages/mytees'
 import MyTees2 from './pages/mytees2';
 import WhatIsTees from './pages/what-is-tees';
 import Team from './pages/team';
@@ -29,6 +30,7 @@ ReactDOM.render(
   <Router>
     <Routes>
       <Route path="/" element={<App />} />
+      <Route path="/mytees" element={<WardrobePage />} />
       <Route path="/mytees2" element={<MyTees2 />} />
       <Route path="/team" element={<Team />} />
       <Route path="/needle&chain" element={<Needle />} />
