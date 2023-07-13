@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './App.css';
 import logo from './images/Red_Logo.png';
+import logo2 from './images/logo_white.png';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -81,7 +82,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo">
-        <img src={logo} alt="Logo" />
+        <img src={logo2} alt="Logo" />
       </div>
       {windowWidth > 768 ? (
         /* Regular menu for larger screens */
