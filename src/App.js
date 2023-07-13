@@ -44,7 +44,7 @@ function App() {
 
   return (
     <div>
-      <div className="App">
+      <div className="AppPage">
       <div class="background-container"></div>
         <Navbar />
         {/* add your routes here */}
