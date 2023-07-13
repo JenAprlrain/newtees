@@ -42,7 +42,6 @@ const Mytees2 = () => {
   const fetchNftCollections = async () => {
     const web3 = new Web3(window.ethereum);
 
-    // Replace with the contract addresses and names of your NFT collections
     const collections = [
       { address: '0x633763D9174d6B772676920b2309b39eE3A92a8a', name: 'CommuniTees Collection' },
       { address: '0x903efDA32f6d85ae074c1948C8d6B54F2421949f', name: 'RoyalTees Collection' },
@@ -80,7 +79,7 @@ const Mytees2 = () => {
       const contract = new web3.eth.Contract(collectionABI, collectionAddress);
 
       const accounts = await web3.eth.getAccounts();
-      const ownerAddress = accounts[0]; // Assuming the user is the first account
+      const ownerAddress = accounts[0];
 
       const nftCount = await contract.methods.balanceOf(ownerAddress).call();
 
@@ -125,28 +124,6 @@ const Mytees2 = () => {
         <p>{nft.name}</p>
       </div>
     ));
-  };
-
-  const sliderSettings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
   };
 
   return (
