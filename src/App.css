@@ -580,6 +580,13 @@ body {
     color: red;
   }
 
+  .slider-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 180px;
+  }
+
   .video-container {
     width: 100%;
     margin-top: 100px; 
@@ -594,34 +601,28 @@ body {
     margin-top: 20px;
   }
   
+  .image-container a img {
+    flex: 1;
+    max-width: 80%;
+    height: auto;
+    margin: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .image-techcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    width: 100%;
+  }
+  
   .image-grid {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-  }
-
-  .image-container {
-    display: flex;
-    justify-content: center;
-  }
-
-  .image-container img {
-    flex: 1;
-    max-width: 45%;
-    height: auto;
-    margin: 5px; /* Adjust the gap size as needed */
-    border-radius: 10px; /* Apply border radius */
-  }
-
-  .image {
-    width: 80%;
-    height: auto;
-    border-radius: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    transition: transform 0.3s;
   }
 
   .image:hover {
