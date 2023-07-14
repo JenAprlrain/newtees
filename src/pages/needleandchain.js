@@ -22,7 +22,7 @@ function Needle() {
     const shouldAutoplay = windowWidth > 768; // Autoplay on screens wider than 768px
 
     const handleButtonClick = () => {
-        window.open('https://forms.gle/NoxU4x4C68SkT59K6', '_blank');
+        window.open('https://forms.gle/VaT7ojRg8CWzuEMZ9', '_blank');
       };
 
 return (
