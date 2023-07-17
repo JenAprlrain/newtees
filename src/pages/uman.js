@@ -33,7 +33,9 @@ return (
       <div class="background-container"></div>
         <Navbar />
       </div>
+      <div>
       <h2 className="image-title">Uman</h2>
+      </div>
       <div>
       <h2 className="WhatIsInfo">
       Uman is an Ecuadorian artist and creator of the World of Umans. She studied design at Parsons School of Design in New York City and has created multiple collections on Ethereum and Fantom. She has received accolates including 2021 Artist of the Year and Collection of the Year at the Fantom Developer Conference was recognized at NFT NYC in 2021 as a "Best NFT Artist" nominee and "Best NFT Emerging Artist", having her piece, “I am Uman”, displayed in Times Square. Her collections are among the most highest-volume collections to date on the Fantom blockchain.</h2>

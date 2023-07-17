@@ -589,12 +589,11 @@ body {
     margin-top: 180px;
   }
 
-  .image-title {
+  h2.image-title {
     color: black;
     text-align: center;
-    margin-top: 500px;
-    font-size: 69px;
-    z-index: 100;
+    margin-top: 150px;
+    font-size: 43px;
     position: relative;
   }
 
@@ -604,6 +603,21 @@ body {
     margin-top: 50px;
     padding: 0 0; /* Adjust the value to control the space on the left and right sides */
     font-size: 16px;
+  }
+
+  .wardrobe-text {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 20px;
+  }
+
+  .connect-wallet-button {
+    width: 200px; /* Adjust the width as needed */
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
   }
 
   .connect-button {
@@ -685,10 +699,21 @@ body {
     margin-top: 1px;
   }
 
-  .image-title {
-    margin-bottom: 1px;
+  h2.image-title {
+    margin-bottom: 20px;
     margin-top: 50px;
-    font-size: 30px;
+    font-size: 20px;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 1px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    transition: transform 0.3s;
+    cursor: pointer;
   }
 
   .images-title {
