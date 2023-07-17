@@ -593,7 +593,7 @@ body {
     color: black;
     text-align: center;
     margin-top: 150px;
-    font-size: 43px;
+    font-size: 28px;
     position: relative;
   }
 
@@ -697,12 +697,6 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 1px;
-  }
-
-  h2.image-title {
-    margin-bottom: 20px;
-    margin-top: 50px;
-    font-size: 20px;
   }
 
   .image {
