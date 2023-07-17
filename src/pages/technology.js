@@ -38,7 +38,7 @@ Series 1 Technology – through partnership with Authentic Vision, a world leade
       <br></br>
       <div className="image-row">
      <div className="image-item">
-    <img src={holo} alt="holografic" />
+    <img src={holo} alt="holografic" className="image" />
     </div>
     </div>
     <br></br>
