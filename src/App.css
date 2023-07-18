@@ -475,8 +475,19 @@ body {
 
 .slick-prev:before,
 .slick-next:before {
-  color: black!important;
-  font-size: 25px!important;
+  color: black !important;
+  font-size: 25px !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slick-prev:before {
+  left: -20px; /* Adjust the value to position the arrow */
+}
+
+.slick-next:before {
+  right: 10px; /* Adjust the value to position the arrow */
 }
 
 .connect-wallet-button {
@@ -724,6 +735,15 @@ body {
     display: flex;
     justify-content: center;
     margin: 0 0px;
+    margin-left: 30px;
+  }
+
+  .slick-prev:before {
+    left: -20px; /* Adjust the value to position the arrow */
+  }
+  
+  .slick-next:before {
+    right: 5px; /* Adjust the value to position the arrow */
   }
 
   .collection-title {
