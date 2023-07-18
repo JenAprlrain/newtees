@@ -13,6 +13,7 @@ import './App.css';
 const ImageSlider = () => {
     const settings = {
       dots: true,
+      arrows: false,
       infinite: true,
       speed: 200,
       slidesToShow: 1,

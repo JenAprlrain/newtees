@@ -4,6 +4,7 @@ import Slider from 'react-slick';
 const NFTCollection = ({ name, nfts }) => {
  const sliderSettings = {
     dots: true,
+    arrows: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
