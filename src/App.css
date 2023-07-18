@@ -715,6 +715,24 @@ body {
     margin-bottom: 1px;
   }
 
+  .nft-carousel {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .nft-carousel-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 0px;
+  }
+
+  .collection-title {
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 60px;
+  }
+
   .footer-container {
     flex-direction: column;
      align-items: flex-start;
