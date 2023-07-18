@@ -30,8 +30,7 @@ ReactDOM.render(
   <Router>
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="/mytees" element={<WardrobePage />} />
-      <Route path="/mytees2" element={<MyTees2 />} />
+      <Route path="/mytees" element={<MyTees2 />} />
       <Route path="/team" element={<Team />} />
       <Route path="/needle&chain" element={<Needle />} />
       <Route path="/about/what-is-tees" element={<WhatIsTees />} />

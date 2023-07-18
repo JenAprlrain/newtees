@@ -14,30 +14,31 @@ const Mytees2 = () => {
   const [connected, setConnected] = useState(false);
   const [nftCollections, setNftCollections] = useState([]);
   const [loading, setLoading] = useState(false);
-
+  const [metamaskInstalled, setMetamaskInstalled] = useState(true); // New state for checking if MetaMask is installed
 
   const connectWallet = async () => {
-  if (typeof window.ethereum !== 'undefined') {
-    let provider = window.ethereum;
-    // edge case if MM and CBW are both installed
-    if (window.ethereum.providers?.length) {
-      window.ethereum.providers.forEach(async (p) => {
-        if (p.isMetaMask) provider = p;
-      });
+    if (typeof window.ethereum !== 'undefined') {
+      let provider = window.ethereum;
+      // edge case if MM and CBW are both installed
+      if (window.ethereum.providers?.length) {
+        window.ethereum.providers.forEach(async (p) => {
+          if (p.isMetaMask) provider = p;
+        });
+      }
+      try {
+        await provider.request({
+          method: 'eth_requestAccounts',
+          params: [],
+        });
+        setConnected(true);
+      } catch (error) {
+        console.error('Failed to connect wallet:', error);
+      }
+    } else {
+      setMetamaskInstalled(false); // Set the state to indicate that MetaMask is not installed
+      console.error('MetaMask extension not detected');
     }
-    try {
-      await provider.request({
-        method: 'eth_requestAccounts',
-        params: [],
-      });
-      setConnected(true);
-    } catch (error) {
-      console.error('Failed to connect wallet:', error);
-    }
-  } else {
-    console.error('MetaMask extension not detected');
-  }
-};  
+  };
 
   const fetchNftCollections = async () => {
     const web3 = new Web3(window.ethereum);
@@ -136,25 +137,32 @@ const Mytees2 = () => {
       <br />
       <div>
         <div className="wardrobe-container">
-  {!connected && (
-    <>
-      <br />
-      <br />
-      <p className="wardrobe-text">Click on a Wardrobe to view the NFTs in your wallet</p>
-      <br />
-      <br />
-      <div className="wardrobe-items">
-        <div className="wardrobe-item">
-          <img src={fwardrobe} alt="Fantom Wardrobe" className="connect-wallet-button" onClick={connectWallet} />
+          {!connected && !metamaskInstalled && ( // Display the warning if MetaMask is not installed
+            <>
+              <br />
+              <br />
+              <p className="wardrobe-text">Please install MetaMask extension to use this application.</p>
+            </>
+          )}
+          {!connected && metamaskInstalled && ( // Display the Connect Wallet button if MetaMask is installed
+            <>
+              <br />
+              <br />
+              <p className="wardrobe-text">Click on a Wardrobe to view the NFTs in your wallet</p>
+              <br />
+              <br />
+              <div className="wardrobe-items">
+                <div className="wardrobe-item">
+                  <img src={fwardrobe} alt="Fantom Wardrobe" className="connect-wallet-button" onClick={connectWallet} />
+                </div>
+              </div>
+            </>
+          )}
         </div>
-      </div>
-    </>
-  )}
-</div>
 
-{connected && loading && <p className="collection-title">Loading...</p>}
+        {connected && loading && <p className="collection-title">Loading...</p>}
 
-    {connected && !loading && nftCollections.length > 0 ? (
+        {connected && !loading && nftCollections.length > 0 ? (
           nftCollections.map((collection) => (
             <div key={collection.address}>
               <h3 className="collection-title">{collection.name}</h3>
