@@ -19,7 +19,7 @@ function WhatIsTees() {
       };
     }, []);
   
-    const shouldAutoplay = windowWidth > 768; // Autoplay on screens wider than 768px
+    const shouldAutoplay = windowWidth > 0; // Autoplay on screens wider than 768px
 
 return (
     <div>

@@ -3,7 +3,7 @@ import Navbar from '../Navbar';
 import Footer from '../Footer';
 import { Link } from 'react-router-dom';
 import uman from '../images/uman2.png'
-import toa from '../images/TOA1.png'
+import nftier from '../images/nftier.png'
 import clok from '../images/clokkworky.png'
 import potluck from '../images/potluck2.png'
 import tomb from '../images/tomb.png'
@@ -35,15 +35,15 @@ return (
       <h2 className="image-title">Partners</h2>
       <div className="image-row2">
       <div className="image-item">
-      <h3 className="images-title">Uman</h3>
-      <Link to="/partners/uman">
-      <img src={uman} alt="uman" className="image" />
+      <h3 className="images-title">NFTier</h3>
+      <Link to="/partners/nftier">
+      <img src={nftier} alt="NFTier" className="image" />
       </Link>
       </div>
       <div className="image-item">
-      <h3 className="images-title">Teens on Acid</h3>
-      <Link to="/partners/toa">
-      <img src={toa} alt="teens on acid" className="image" />
+      <h3 className="images-title">Uman</h3>
+      <Link to="/partners/uman">
+      <img src={uman} alt="uman" className="image" />
       </Link>
       </div>
       <div className="image-item">

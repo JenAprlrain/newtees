@@ -20,7 +20,7 @@ import Yachtclub from './pages/yachtclub'
 import Clokk from './pages/clokk'
 import Potluck from './pages/potluck'
 import Punks from './pages/punks'
-import Toa from './pages/toa'
+import Nftier from './pages/nftier'
 import Tomb from './pages/tomb'
 import Uman from './pages/uman'
 import Needle from './pages/needleandchain'
@@ -47,7 +47,7 @@ ReactDOM.render(
       <Route path="/partners/clokk" element={<Clokk />} />
       <Route path="/partners/potluck" element={<Potluck />} />
       <Route path="/partners/punks" element={<Punks />} />
-      <Route path="/partners/toa" element={<Toa />} />
+      <Route path="/partners/nftier" element={<Nftier />} />
       <Route path="/partners/tomb" element={<Tomb />} />
       <Route path="/partners/uman" element={<Uman />} />
     </Routes>

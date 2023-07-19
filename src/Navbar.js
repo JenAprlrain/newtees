@@ -46,8 +46,8 @@ const Navbar = () => {
 <li className="dropdown">
 <Link to="/partners">Partners</Link>
   <div className="dropdown-content">
+    <Link to="/partners/nftier">NFTier</Link>
     <Link to="/partners/uman">Uman</Link>
-    <Link to="/partners/toa">Teens on Acid</Link>
     <Link to="/partners/clokk">Clokkworky</Link>
     <Link to="/partners/potluck">Potluck Labs</Link>
     <Link to="/partners/tomb">Tombheads AH</Link>
