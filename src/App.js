@@ -30,7 +30,7 @@ function App() {
     };
   }, []);
 
-  const shouldAutoplay = windowWidth > 768; // Autoplay on screens wider than 768px
+  const shouldAutoplay = windowWidth > 0; // Autoplay on screens wider than 768px
 
   const navigate = useNavigate();
 
@@ -71,14 +71,6 @@ function App() {
   <img src={partners} alt="Partners" />
   </Link>
 </div>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
 <div className="image-container">
 <Link to="/mytees" style={{ display: 'block' }} onClick={handleLinkClick}>
 <img src={mytees} alt="mytees" />
@@ -92,7 +84,7 @@ function App() {
 <img src={tech} alt="tech" />
 </Link>
 </div>
-<h2 className="image-title">Current OfficialNFTees Collections</h2>
+<h2 className="image-title2">Current OfficialNFTees Collections</h2>
 <div className="image-row">
   <div className="image-item">
     <h3 className="images-title">RoyalTees</h3>

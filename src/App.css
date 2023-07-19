@@ -152,6 +152,8 @@ body {
 .hamburger {
   display: none;
   cursor: pointer;
+  font-size: 40px;
+  margin-top: -30px ;
 }
 
 .slider-container {
@@ -200,6 +202,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 300px;
 }
 
 .image-techcontainer {
@@ -269,6 +272,13 @@ body {
 }
 
 .image-title {
+  color: black;
+  text-align: center;
+  margin-top: 200px;
+  font-size: 60px;
+}
+
+.image-title2 {
   color: black;
   text-align: center;
   margin-top: 200px;
@@ -608,6 +618,13 @@ body {
     position: relative;
   }
 
+  h2.image-title2 {
+    color: black;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 20px;
+  }
+
   .WhatIsInfo {
     color: black;
     text-align: center;
@@ -658,7 +675,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start; /* Align to the left */
-    margin-right: 160px;
+    margin-right: 240px;
     margin-top: 20px;
   }
 
@@ -674,6 +691,13 @@ body {
     background-repeat: no-repeat;
     z-index: -1;
   }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3px;
+  }
   
   .image-container a img {
     flex: 1;
@@ -688,7 +712,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 80px;
     width: 100%;
   }
   
