@@ -152,8 +152,8 @@ body {
 .hamburger {
   display: none;
   cursor: pointer;
-  font-size: 30px;
-  margin-top: -30px ;
+  font-size: 60px;
+  margin-top: -70px ;
   color: white !important;
 }
 
@@ -549,9 +549,10 @@ body {
     display: block;
     margin-left: 290px;
   }
+  
   .navbar {
     flex-direction: column;
-    padding: 5px;
+    padding: 13px;
   }
 
   .nav-links {
