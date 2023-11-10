@@ -107,6 +107,15 @@ body {
   color: red;
 }
 
+.tweet-container {
+  text-align: center;
+  height: 600px;
+  width: 50%;
+  margin: auto;
+  margin-top: 200px; 
+  margin-bottom: 200px;  
+}
+
 .video-container {
   display: flex;
   justify-content: center;

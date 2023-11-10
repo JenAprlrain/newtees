@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { TwitterTimelineEmbed } from 'react-twitter-embed';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import './App.css';
@@ -83,6 +84,13 @@ function App() {
 <Link to="/needle&chain" style={{ display: 'block' }} onClick={handleLinkClick}>
 <img src={tech} alt="tech" />
 </Link>
+</div>
+<div className="tweet-container">
+  <TwitterTimelineEmbed
+  sourceType="profile"
+  screenName="officialnftees"
+  options={{height: 600}}
+  />
 </div>
 <h2 className="image-title2">Current OfficialNFTees Collections</h2>
 <div className="image-row">
