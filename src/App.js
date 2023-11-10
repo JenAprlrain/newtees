@@ -89,6 +89,7 @@ function App() {
   <TwitterTimelineEmbed
   sourceType="profile"
   screenName="officialnftees"
+  theme="dark"
   options={{height: 600}}
   />
 </div>
