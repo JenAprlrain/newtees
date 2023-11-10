@@ -90,7 +90,7 @@ function App() {
   sourceType="profile"
   screenName="officialnftees"
   theme="dark"
-  tweetLimit="5"
+  tweetLimit={5}
   options={{height: 600}}
   />
 </div>
